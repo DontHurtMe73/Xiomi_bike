@@ -1,0 +1,17 @@
+// colors
+$primary-color: #131313;
+$secondary-color: #6F6F6F;
+$accent-color: #FF4040;
+$white-color: #fff;
+
+
+// fonts
+@mixin inter-regular {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
+@mixin inter-bold {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+}

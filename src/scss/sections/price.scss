@@ -1,0 +1,140 @@
+.price{
+    margin-bottom: 100px;
+
+    &__wrapper{
+        position: relative;
+    }
+}
+
+.form{
+    max-width: 420px;
+}
+
+.form__title{
+    margin-bottom: 40px;
+    @include inter-bold;
+    font-size: 16px;
+    line-height: 1.18;
+    text-transform: uppercase;
+}
+
+.form__text{
+    margin-bottom: 30px;
+    line-height: 1.2;
+    max-width: 300px;
+}
+
+.form__input-name, 
+.form__input-phone{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid $primary-color;
+}
+
+.form__input-name::placeholder, 
+.form__input-phone::placeholder,
+.form__input-text{
+    line-height: 1.2;
+    color: $secondary-color;
+    opacity: 0.5;
+}
+
+.form__input-text{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__label-box{
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.form__label{
+    cursor: pointer;
+}
+
+.form__label + .form__label {
+    margin-left: 23px;
+}
+
+.form__input-radio{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.form__input-radio:checked + .form__bike{
+    display: block;
+}
+
+.form__bike{
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+}
+
+.form__bike-price{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 220px;
+    height: 100px;
+    top: 30px;
+    left: 0;
+    right: 0;
+    font-size: 32px;
+    line-height: 1.2;
+    border: 1px solid $accent-color;
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 220px;
+        height: 100px;
+        border: 1px solid $accent-color;
+        border-radius: 50%;
+        top: 12px;
+        left: 0;
+    }
+}
+
+.form__radio-style{
+    border-radius: 30px;
+    width: 80px;
+    height: 12px;
+
+    &--grey{
+        background-color: $secondary-color;
+    }
+
+    &--white{
+        background-color: $white-color;
+        border: 1px solid $secondary-color;
+    }
+
+    &--red{
+        background-color: $accent-color;
+    }
+}
+
+.form__btn{
+    padding: 28px 76px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $primary-color;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        background-color: $accent-color;
+    }
+}

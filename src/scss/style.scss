@@ -1,0 +1,70 @@
+@import "normal";
+@import "fonts";
+@import "vars";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/autoplay/autoplay.scss";
+
+
+@import "header";
+@import "./sections/bike";
+@import "./sections/benefits";
+@import "./sections/specification";
+@import "./sections/slider";
+@import "./sections/price";
+@import "./sections/faq";
+@import "footer";
+
+@import "media";
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	@include inter-regular;
+	font-size: 14px;
+	color: $primary-color;
+}
+
+.container{
+	max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+a{
+    color: inherit;
+}
+
+.back_to_top{
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    line-height: 20px;
+    background: #131313;
+    cursor: pointer;
+}
+
+.back_to_top:hover{
+    opacity: .8;
+}
+
+.back_to_top-show {
+    display: block;
+}
+
+.back_to_top-svg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    fill: #fff;
+}

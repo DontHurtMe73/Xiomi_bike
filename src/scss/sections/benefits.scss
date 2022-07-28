@@ -1,0 +1,35 @@
+.benefits{
+    padding-top: 150px;
+    margin-bottom: 50px;
+
+    &__wrapper{
+        display: flex;
+    }
+}
+
+.benefits__img{
+    flex-basis: 570px;
+    object-fit: cover;
+}
+
+.benefits__content{
+    margin-left: 60px;
+    flex-basis: 490px;
+}
+
+.benefits__item + .benefits__item{
+    margin-top: 50px;
+}
+
+.benefits__item-title{
+    margin-bottom: 10px;
+    @include inter-bold;
+    font-size: 16px;
+    line-height: 1.18;
+    text-transform: uppercase;
+}
+
+.benefits__item-text{
+    max-width: 450px;
+    line-height: 1.2;
+}
